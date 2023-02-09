@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{% block 'title' %} {% endblock %} | Teal CRM</title>
+</head>
+
+<body>
+    <nav class="py-6 flex justify-between px-6 bg-teal-700">
+        <a href="/" class="text-white">Teal CRM</a>
+        <div>
+            <a href="/" class="py-3 px-6 bg-teal-800 rounded-xl text-white">Log in</a>
+            <a href="/" class="py-3 px-6 bg-teal-500 rounded-xl text-white">Sign up</a>
+
+        </div>
+
+    </nav>
+
+    {% block 'content' %}
+    {% endblock %}
+    <footer class="py-8 text-center bg-gray-100">
+        <p class="text-xs text-gray-700"></p>
+
+    </footer>
+</body>
+
+</html>
