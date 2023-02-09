@@ -17,6 +17,7 @@
             <a href="{% url 'login' %}" class="py-3 px-6 bg-teal-800 rounded-xl text-white">Log in</a>
             <a href="{% url 'signup' %}" class="py-3 px-6 bg-teal-500 rounded-xl text-white">Sign up</a>
             {% else %}
+            <a href="{% url 'dashboard' %}" class="text-white">Dashboard</a>
             <a href="{% url 'logout' %}" class="py-3 px-6 bg-red-500 rounded-xl text-white">Logout</a>
             {% endif %}
 
