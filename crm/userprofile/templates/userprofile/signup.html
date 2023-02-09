@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{%block 'title' %}Signup{% endblock%}
+{% block 'content' %}
+<h1>Sign up</h1>
+<form action="{% url 'signup' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button class="py-3 px-6 bg-teal-500 text-white rounded-xl">Submit</button>
+
+</form>
+
+{% endblock %}

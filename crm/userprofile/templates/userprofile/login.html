@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{%block 'title' %}Signin{% endblock%}
+{% block 'content' %}
+<h1>Sign in</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button class="py-3 px-6 bg-teal-500 text-white rounded-xl">Submit</button>
+
+</form>
+
+{% endblock %}
