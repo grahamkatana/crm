@@ -1,0 +1,15 @@
+TODO: create a venv and install django: DONE
+TODO: base pages and a templates
+    : app for pages
+    : base tempate
+    : front page
+    : about page
+TODO: authentication
+TODO: simple dashboard
+TODO: create new leads
+TODO: change and delete leads
+TODO: convert leads to clients
+TODO: change and delete clients
+TODO: implement solution for teams
+TODO: payment solution
+TODO: deploy
