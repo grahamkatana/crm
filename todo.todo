@@ -6,9 +6,9 @@ TODO: base pages and a templates ✅
     : about page ✅
 TODO: authentication
     : userprofile model ✅
-    : sign up
-    : sign in
-    : log out
+    : sign up ✅
+    : sign in ✅
+    : log out ✅
 TODO: simple dashboard
 TODO: create new leads
 TODO: change and delete leads
