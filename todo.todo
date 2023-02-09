@@ -1,9 +1,9 @@
-TODO: create a venv and install django: DONE
+TODO: create a venv and install django: ✅
 TODO: base pages and a templates
-    : app for pages
-    : base tempate
-    : front page
-    : about page
+    : app for pages ✅
+    : base tempate ✅
+    : front page ✅
+    : about page ✅
 TODO: authentication
 TODO: simple dashboard
 TODO: create new leads
