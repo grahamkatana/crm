@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+
+{%block 'title' %}Leads{% endblock%}
+{% block 'content' %}
+<div class="py-6 px-6">
+    <div class="flex space-between space-x-8 mb-3">
+        <!-- <h1 class="text-xl">Leads</h1> -->
+        <a href="{% url 'add_lead' %}" class="py-3 px-6 bg-teal-400 rounded-xl text-white">New leads</a>
+    </div>
+
+    {% if leads %}
+    <div class="mt-6 flex justify-between">
+        <p class="py-4 px-2 bg-gray-200 font-semibold w-full">Name</p>
+        <p class="py-4 px-2 bg-gray-200 font-semibold w-full">Priority</p>
+        <p class="py-4 px-2 bg-gray-200 font-semibold w-full">Status</p>
+        <p class="py-4 px-2 bg-gray-200 font-semibold w-full">Edit</p>
+    </div>
+    {% endif %}
+
+    {% for lead in leads %}
+    <div class="flex justify-between">
+        <p class="py-4 px-2 w-full {% cycle 'bg-gray-100' ''%}"><a class="text-gray"
+                href="{% url 'lead_details' lead.id%}">{{lead.name}}</a></p>
+        <p class="py-4 px-2 w-full {% cycle 'bg-gray-100' ''%}">{{lead.get_priority_display}}</p>
+        <p class="py-4 px-2 w-full {% cycle 'bg-gray-100' ''%}">{{lead.get_status_display}}</p>
+        <p class="py-4 px-2 w-full {% cycle 'bg-gray-100' ''%}"><a class="py-2 px-5 bg-blue-500 rounded-xl text-white"
+                href="{% url 'edit_lead' lead.id%}">Edit</a></p>
+    </div>
+    {% empty %}
+    <div class="flex justify-between">
+        <p class="px-2">No leads exist</p>
+    </div>
+
+    {% endfor %}
+
+
+</div>
+
+
+
+{% endblock %}
