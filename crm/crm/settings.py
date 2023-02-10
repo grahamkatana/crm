@@ -27,9 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-# Application definition
-# 45
 LOGIN_REDIRECT_URL = '/dashboard/'
 LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'index'
@@ -44,6 +41,7 @@ INSTALLED_APPS = [
     'core',
     'userprofile',
     'dashboard',
+    'lead'
 ]
 
 MIDDLEWARE = [
