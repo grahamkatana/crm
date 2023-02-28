@@ -19,6 +19,7 @@
     <p class="font-semibold">Modified at</p>
     <p class="mb-6">{{lead.modified_at}}</p>
     <hr class="my-4">
+    <a href="{% url 'convert_to_client' lead.id %}" class="py-3 px-6 bg-teal-500 rounded-xl text-white">Convert to client</a>
     <a href="{% url 'delete_lead' lead.id %}" class="py-3 px-6 bg-red-500 rounded-xl text-white">Delete</a>
     <hr class="my-4">
     <a href="{% url 'leads_list' %}" class="">Back</a>

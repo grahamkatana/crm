@@ -17,8 +17,11 @@ TODO: create new leads
     : list out leads ✅
     : view detail page of leads ✅
 TODO: change and delete leads ✅
-TODO: convert leads to clients
-TODO: change and delete clients
+TODO: convert leads to clients ✅
+TODO: convert leads to clients ✅
+    : change and delete clients
+    : show a list of clients ✅
+    : show detail page of clients ✅
 TODO: implement solution for teams
 TODO: payment solution
 TODO: deploy
